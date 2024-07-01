@@ -33,7 +33,7 @@ body {
 }
 
 .logo_container h1 {
-  color: white;
+  color: black;
   height: 100%;
   display: table-cell;
   vertical-align: middle;
@@ -50,6 +50,7 @@ body {
   float: right;
   height: 100%;
   display: table;
+  color: black;
 }
 
 .navigation a {
