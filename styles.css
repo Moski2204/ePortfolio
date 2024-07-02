@@ -81,11 +81,6 @@ body {
   font-size: 20px;
 }
 
-.custom-navbar {
-  background: transparent;
-  border: 0px;
-}
-
 
 @media (min-width: 1500px) {
   .navbar-brand{
