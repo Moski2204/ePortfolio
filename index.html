@@ -5,53 +5,238 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mahrus Naseem</title>
     <style>
-      .border{
-        font-weight: normal;
+
+      section{
+        scroll-margin-top: 4rem;
+      }
+      
+      /*Index*/
+      .border {
+        color: white;
         text-align: center;
-        font-size: 10px;
-        margin-top: 210px;
-        margin-left: 700px;
+        font-size: 15px;
+        margin-top: 300px;
+        margin-right: 1130px;
       }
 
-      .border2{
+      .border2 {
         font-weight: normal;
-        text-align: center;
-        font-size: 40px;
+        font-size: 60px;
         margin-top: 5px;
-        margin-left: 700px;
+        margin-left: 220px;
       }
 
-      .Img{
-        position: relative;
-        position: absolute; left: 50px; Top: 100px;
+      .Img {
+        position: absolute;
+        right: 100px;
+        top: 150px;
       }
 
+      /*About Me*/
+
+      #AbtPic{
+        position: absolute;
+        left: 100px;
+        top: 1200px;
+      }
+
+      #AbtTitle{
+        padding-top: 20px;
+        color: white;
+        margin-top: 620px;
+        margin-left: 1000px;
+        font-size: 40px;
+      }
+  
+      #AbtText{
+        margin-top: 130px;
+        width: 800px;
+        margin-left: 900px;
+        font-size: 20px;
+      }
+
+      /*Projects*/
+      .title{
+        text-align: center;
+        color: white;
+        margin-top: 900px;
+        font-size: 40px;
+      }
+  
+      #container{
+        width: 900px;
+        margin: 0 auto;
+        margin-top: 100px;
+      }
+      
+      .col1, .col2, .col3{
+        text-align: center;
+        width: 280px;
+        float: left;
+        margin: 10px;
+      }
+      
+      .col1{
+        background-color: lightcyan;
+        padding: 20px;
+        border-radius: 30px;
+      }
+  
+      .col2{
+        background-color: lightcyan;
+        padding: 20px;
+        border-radius: 30px;
+      }
+  
+      .col3{
+        background-color: lightcyan;
+        padding: 20px;
+        border-radius: 30px;
+      }
+      
+      .col4{
+        text-align: center;
+        width: 900px;
+        height: 450px;;
+        margin: 0 auto;
+        background-color: lightcyan;
+        border-radius: 50px;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+      /*Contacts*/
     </style>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+
     <div class="header">
       <div class="inner_header">
         <div class="logo_container">
           <h1>My<span>Portfolio</span></h1>
         </div>
         <ul class="navigation">
-          <a href = "index.html"><li>Home</li></a>
-          <a href = "Projects.html"><li>Projects</li></a>
-          <a href = "About.html"><li>About</li></a>
-          <a href = "Contact.html"><li>Contacts</li></a>
+          <a href="#Home"><li>Home</li></a>
+          <a href="#About"><li>About</li></a>
+          <a href="#Projects"><li>Projects</li></a>
+          <a href="#Contact"><li>Contacts</li></a>
         </ul>
       </div>
     </div>
-    <div class="border">
-      <h1 style="color: black;">Hey, my name is </h1>
+
+    <!--Home Page-->
+    <section id="Home">
+
+       <div class="border">
+        <h1 style="font-weight: normal;">
+          Hey, I'm Muhammad Naseem
+        </h1>
+      </div>
+
+      <div class="border2">
+      An aspiring software <br/>
+      developer
+      </div>
+      <br />
+      <h3 style="font-weight: normal; margin-left: 225px; font-size: 25px; color: white">
+        I am currently a third-year student at York University <br />
+        pursuing a Bachelor's of Arts Honours in Information Technology
+      </h3>
+
+      <div class="Img">
+        <img src="Wave.png" alt="Image" style="width: 650px; height: 700px" />
+      </div>
+    </section>
+
+    <!--About Page-->
+  <section id="About">
+
+    <div id="AbtPic">
+      <img src="About.png" alt="Image" style="width: 600px; height: 700px;">
     </div>
 
-  <div class="border2"> Muhammad Mahrus Naseem. <br> I'm a third year student at York University. </div>
+    <div id="AbtTitle">
+      <h1>About Me</h1>
+    </div>
 
-  <div class="Img">
-  <img src="Wave.png" alt="Image" style="width: 400px; height: auto;">
-  </div>
+    <div id="AbtText">
+      <h3 style="float: right; color: white; font-weight: normal;">
+        <ul>
+          <li>Hello! I'm Muhammad Naseem, an Information Technology student at York University. I'm passionate about just about anything in technology, and intriguied in all of the new things arising in the Artifical Intelligance.</li>
+          <br>
+          <li> Right now, I'm focused on learning different coding languages to expand my knowledge and intrigued by the possibilities of getting into Cloud computing.</li>
+          <br>
+          <li>Outside of my studies, I enjoy playing video games, working out at the gym, and listening to podcasts that inspire new ideas. </li>
+          <br>
+          <li>I'm seeking 2025 internships in software development or IT roles to apply my passion for technology and innovation.</li>
+        </ul> 
+      </h3>
+    </div>
+  </section>
 
+    <!--Projects Page-->
+    <section id="Projects">
+
+      <div class="title">
+        <h1>Projects</h1>
+      </div>
+
+      <div id = "container">
+        <div class="col1">
+          <h2>Grocery Store (Java & OOP)</h3>
+            <img src="GroceryStore.jpeg" alt="Grocery Store image" style="width: 250px; height: auto;">
+            <br>
+            <br>
+            <h4 style="font-weight: normal;">This project simulates a grocery store where customers can purchase limited items and return products. The program uses OOP princiapls such as encapsulation, inheritance, and abstraction to manage grocery inventory. Features include efficient user input handling, control flow mechanisms for smooth transactions, and enhanced user experience through effective management of purchases and returns.
+            </h4>
+            <br>
+            <a href="https://github.com/Moski2204/GroceryStore">View on Github</a>
+        </div>
+
+        <div class="col2">
+          <h2>Reverse A Word (Java & GUI)</h2>
+          <br>
+          <img src="Reverse.png" alt="Image" style="width: 250px; height: auto;">
+          <br>
+          <br>
+          <ul>
+            <li>Created a Java program with GUI functionality that allows users to input a word and instantly see it reversed</li>
+            <br>
+            <a href="https://github.com/Moski2204/Reverse-A-Word">View on Github</a>
+          </ul>
+        </div>
+
+        <div class="col3">
+          <h2>Implementation of Data Structures (Java, OOP, & DSA)</h2>
+          <br>
+          <img src="DataStructure.jpg" alt="Image" style="width: 250px; height: auto;">
+          <br>
+          <br>
+          <ul> 
+            <li> Manuallay developed key data structures (LinkedList, Stack, Queue, Min Heap, and Binary Search Tree) without relying on or using built-in classes. Created a user-friendly menu interface to explain the available operations to the user, implemented core functionalities for each structure, and ensured robust handling of edge cases and exceptions for a seamless user experience.</li>
+            <br>
+            <a href="https://github.com/Moski2204/DataStructuresImplementation">View on Github</a>
+          </ul>
+        </div>
+      </div>
+    
+      <div class="container">
+        <div class="col4">
+          <h1 style="margin-top: 800px; text-align: center; font-size: 50px; padding: 30px;">What Am I Currently Working On?</h1>
+          <br>
+          <h3 style="text-align: center; font-weight: normal">I'm currently expanding my skills by working on a new project: A Workout Tracker. 
+          <br>
+          This application allows users to create accounts, log in, and add personal notes for reminders. Additionally, users can track the number of sets and reps they perform during each workout session. This feature enables them to easily monitor their progress over time, providing valuable insights into their fitness journey.</h3>
+          <br>
+          <br>
+          <h4 style="font-weight: normal;">Languages Used: </h4>
+        </div>
+      </div>
+    </section>
+
+    <section id="Contact">
+      <h1>Contacts</h1>
+    </section>
   </body>
 </html>
