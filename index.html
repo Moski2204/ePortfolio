@@ -12,31 +12,26 @@
       /*Index*/
       #border {
         color: white;
-        display: flex;
-        flex-direction: column;
-        margin-left: 145px;
-        margin-top: 200px
+        width: 50%;
+        padding: 80px;
+        float: left;
       }
 
       #border2 {
         color: white;
         font-weight: normal;
         font-size: 60px;
-        margin-left: 145px;
+        margin-left: 200px;
+        margin-top: 100px;
       }
 
-      #Img {
-        position: absolute;
-        right: 20px;
-        top: 100px;
-      }
+    
 
       /*About Me*/
-
       #AbtTitle{
         padding-top: 20px;
         color: white;
-        margin-top: 200px;
+        margin-top: 150px;
         text-align: center;
         font-size: 60px;
       }
@@ -191,78 +186,76 @@
         </ul>
       </div>
     </div>
-  
-    <!-- Home Page -->
-    <section id="Home">
-      <div id="border">
-        <h1 style="font-weight: normal;">Hey, I'm Muhammad Naseem</h1>
-      </div>
-  
-      <div id="border2"> An aspiring software <br/> developer </div>
 
-      <br/>
-      <h3 style="font-weight: normal; margin-left: 150px; font-size: 25px; color: white;">
-        I am currently a third-year student at York University <br/>
-        pursuing a Bachelor's of Arts Honours in <br>  Information Technology
-      </h3>
-  
-      <div id="Img">
-        <img src="Wave.png" alt="Image" style="width: 450px; height: 500px;"/>
+<!-- Home Page -->
+  <section id="Home">
+    <div id="border">
+      <h1 style="font-weight: normal; margin-top: 90px;">Hey, I'm Muhammad Naseem</h1>
+      <h1 style="font-size: 40px;">An aspiring software <br> developer</h1>
+      <h1 style="font-weight: normal; width: 600px;">I am currently a third-year student at York University pursuing a Bachelor's of Arts Honours in <br> Information Technology</h1>
+    </div>
+    <div id="border2">
+      <img src="Wave.png" alt="Image" style="width: 420px; height: 500px; margin-left: 100px;"/>
       </div>
     </section>
 
-    <!--About Page-->
-    <section id="About"></section>
-    <table style="width: 90%; margin-left: 5%; margin-right: 5%;">
+<!--About Page-->
+  <section id="About">
+    <table style="width: 90%; margin-left: 5%; margin-right: 5%; border-color: red;">
       <tr style="height: 0%;">
-        <th colspan="2" style="vertical-align: top;"><h1 id="AbtTitle">About Me</h1></th>
+        <th colspan="2" style="vertical-align: top;">
+          <h1 id="AbtTitle">About Me</h1>
+        </th>
       </tr>
       <tr>
         <td style="text-align: center;">
           <img src="About.png" alt="Image" style="width: 400px; height: 500px;">
         </td>
-        <td style="color: white; font-size: 20px;">Hello! I'm Muhammad Naseem, an Information Technology student at York University. <br/><br/>
-          I'm passionate about just about anything in technology, and intrigued by all the new things arising in Artificial Intelligence. <br><br> Right now, I'm focused on learning different coding languages to expand my knowledge; however, I also have my eyes on getting into Cloud computing. <br><br> Outside of my studies, I enjoy playing video games, working out at the gym, and listening to podcasts that inspire new ideas.  <br><br> I'm seeking 2025 internships in software development or IT roles to apply my passion for technology and innovation.
+        <td style="color: white; font-size: 20px;">Hello! I'm Muhammad Naseem, an Information Technology student at York University.<b><br>
+        I'm passionate about just about anything in technology, and intrigued by all the new things arising in Artificial Intelligence. <br><br> Right now, I'm focused on learning different coding languages to expand my knowledge; however, I also have my eyes on getting into Cloud computing. <br><br> Outside of my studies, I enjoy playing video games, working out at the gym, and listening to podcasts that inspire new ideas. <br><br> I'm seeking 2025 internships in software development or IT roles to apply my passion for technology and innovation.
         </td>
       </tr>
       <tr>
         <td style="vertical-align: top;">
-          <div class="Col1"><h2 style="font-weight: normal;">Languages</h2>
-          <img src="Languages.png" alt="" style="width: 150px; height: 140px;"/>
-          <h4 style="font-weight: normal; padding: 20px;">HTML/CSS, Java, Python, JavaScript, MatLab</h4></div>
+          <div class="Col1">
+            <h2 style="font-weight: normal;">Languages</h2>
+            <img src="Languages.png" alt="" style="width: 150px; height: 140px;"/>
+            <h4 style="font-weight: normal; padding: 20px;">HTML/CSS, Java, Python, JavaScript, MatLab</h4>
+          </div>
         </td>
         <td style="vertical-align: top;">
-          <div class="Col2"><h2 style="font-weight: normal; padding-bottom: 10px;">Developer Tools</h2>
-          <img src="DevTools.png" alt="" style="width: 150px; height: 135px;"/>
-          <h4 style="font-weight: normal; padding: 20px;">
-            Git/GitHub, Eclipse, Visual Studio Code, IntelliJ IDEA
-          </h4></div>
+          <div class="Col2">
+            <h2 style="font-weight: normal; padding-bottom: 10px;">Developer Tools</h2>
+            <img src="DevTools.png" alt="" style="width: 150px; height: 135px;"/>
+            <h4 style="font-weight: normal; padding: 20px;">
+              Git/GitHub, Eclipse, Visual Studio Code, IntelliJ IDEA
+            </h4>
+          </div>
         </td>
       </tr>
     </table>
   </section>
 
    
-    <!-- Projects Page -->
-    <section id="Projects">
-      <div class="title">
-        <h1>Projects</h1>
+<!-- Projects Page -->
+  <section id="Projects">
+    <div class="title">
+      <h1>Projects</h1>
+    </div>
+    <div id="container">
+      <div class="col1">
+        <h2 style="font-weight: normal;">Grocery Store (Java & OOP)</h2>
+        <img src="GroceryStore.jpeg" alt="Grocery Store image" style="width: 240px; height: auto; padding-top: 10px;"/>
+        <br /><br/>
+        <h4 style="font-weight: normal;">
+          Developed a grocery store where customers can purchase limited items and return products. The program uses OOP principles such as encapsulation, inheritance, and abstraction to manage grocery inventory. Features include efficient user input handling, control flow mechanisms for smooth transactions, and enhanced user experience through effective management of purchases and returns.
+        </h4>
+        <br/>
+          <a href="https://github.com/Moski2204/GroceryStore">View on Github</a>
       </div>
   
-      <div id="container">
-        <div class="col1">
-          <h2 style="font-weight: normal;">Grocery Store (Java & OOP)</h2>
-          <img src="GroceryStore.jpeg" alt="Grocery Store image" style="width: 240px; height: auto; padding-top: 10px;"/>
-          <br /><br/>
-          <h4 style="font-weight: normal;">
-            Developed a grocery store where customers can purchase limited items and return products. The program uses OOP principles such as encapsulation, inheritance, and abstraction to manage grocery inventory. Features include efficient user input handling, control flow mechanisms for smooth transactions, and enhanced user experience through effective management of purchases and returns.
-          </h4>
-          <br/>
-          <a href="https://github.com/Moski2204/GroceryStore">View on Github</a>
-        </div>
-  
-        <div class="col2">
-          <h2 style="font-weight: normal;">Reverse A Word (Java & GUI)</h2>
+      <div class="col2">
+        <h2 style="font-weight: normal;">Reverse A Word (Java & GUI)</h2>
           <br/>
           <img src="Reverse.png" alt="Image" style="width: 240px; height: auto;" />
           <br/><br/>
@@ -271,7 +264,7 @@
             <br/>
             <a href="https://github.com/Moski2204/Reverse-A-Word">View on Github</a>
           </ul>
-        </div>
+      </div>
   
         <div class="col3">
           <h2 style="font-weight: normal;">Implementation of Data Structures (Java, OOP, & DSA)</h2>
@@ -293,7 +286,7 @@
           </h1>
           <br/>
           <h3 style="text-align: center; font-weight: normal;">
-            I'm currently expanding my skills by using HTML, CSS & JavaScript to create a "Workout Tracker" application. This application allows users to create accounts, log in, and add personal notes for reminders. Additionally, users can track the number of sets and reps they perform during each workout session. This feature enables them to easily monitor their progress over time, providing valuable insights into their fitness journey.
+            I'm currently expanding my skills by using HTML, CSS & JavaScript to create a "Workout Tracker" application. This will application allows users to create accounts, log in, and add personal notes for reminders. Additionally, users can track the number of sets and reps they perform during each workout session. This feature will enable them to easily monitor their progress over time, which will provide valuable insights into their fitness journey.
           </h3>
         </div>
       </div>
