@@ -11,48 +11,30 @@
 
       /*Index*/
 
-
-      #border {
-        color: white;
+      .con {
+        width: 1000px;
+        margin: 0 auto;
+        margin-top: 120px;
         display: flex;
-        flex-direction: column;
-        margin-left: 145px;
-        margin-top: 200px
+        justify-content: space-between;
+        align-items: center;
       }
-
-      /* 
-      #border {
-        color: white;
-        width: 50%;
-        padding: 80px;
-        float: left;
-      }
-        */
-
-      #border2 {
-        color: white;
-        font-weight: normal;
-        font-size: 60px;
-        margin-left: 145px;
-      }
-
-      /*
-      #border2 {
-        color: white;
-        font-weight: normal;
-        font-size: 60px;
-        margin-left: 200px;
-        margin-top: 100px;
-      }
-        */
-
-      #Img {
-        position: absolute;
-        right: 20px;
-        top: 100px;
-      }
-
     
+      .firstCol {
+        flex: 1;
+        margin-right: 20px;
+      }
+    
+      .secondCol {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+      }
+    
+      .secondCol img {
+        max-width: 100%;
+        height: auto;
+      }
 
       /*About Me*/
       #AbtTitle{
@@ -64,7 +46,6 @@
       }
 
       .Col1{
-        
         text-align: center;
         background-color: lightcyan;
         padding: 20px;
@@ -214,37 +195,21 @@
       </div>
     </div>
 
-    <section id="Home">
-      <div id="border">
-        <h1 style="font-weight: normal;">Hey, I'm Muhammad Naseem</h1>
-      </div>
-  
-      <div id="border2"> An aspiring software <br/> developer </div>
-      <br/>
-      <h3 style="font-weight: normal; margin-left: 150px; font-size: 25px; color: white;">
-        I am currently a third-year student at York University <br/>
-        pursuing a Bachelor's of Arts Honours in <br>  Information Technology
+<!-- Home Page -->
+<section id="Home">
+  <div class="con">
+    <div class="firstCol">
+      <h3 style="font-weight: normal; color: white;">Hey, I'm Muhammad Naseem</h3>
+      <h3 style="font-size: 40px; color: white; font-weight: normal;"> An aspiring software <br/> developer </h3>
+      <h3 style="font-weight: normal; font-size: 25px; color: white;">
+        I am currently a third-year student at York University pursuing a Bachelor's of Arts Honours in Information Technology
       </h3>
-  
-      <div id="Img">
-        <img src="Wave.png" alt="Image" style="width: 450px; height: 500px;"/>
-      </div>
-    </section>
-
-
-<!-- Home Page 
-  <section id="Home">
-    <div id="border">
-      <h1 style="font-weight: normal; margin-top: 90px;">Hey, I'm Muhammad Naseem</h1>
-      <h1 style="font-size: 40px;">An aspiring software <br> developer</h1>
-      <h1 style="font-weight: normal; width: 600px;">I am currently a third-year student at York University pursuing a Bachelor's of Arts Honours in <br> Information Technology</h1>
     </div>
-    <div id="border2">
-      <img src="Wave.png" alt="Image" style="width: 420px; height: 500px; margin-left: 100px;"/>
-      </div>
-    </section>
-
-    -->
+    <div class="secondCol">
+      <img src="Wave.png" alt="Image" style="width: 450px; height: 500px;"/>
+    </div>
+</div>
+</section>
 
 <!--About Page-->
   <section id="About">
@@ -258,8 +223,9 @@
         <td style="text-align: center;">
           <img src="About.png" alt="Image" style="width: 400px; height: 500px;">
         </td>
-        <td style="color: white; font-size: 20px;">Hello! I'm Muhammad Naseem, an Information Technology student at York University.<b><br>
-        I'm passionate about just about anything in technology, and intrigued by all the new things arising in Artificial Intelligence. <br><br> Right now, I'm focused on learning different coding languages to expand my knowledge; however, I also have my eyes on getting into Cloud computing. <br><br> Outside of my studies, I enjoy playing video games, working out at the gym, and listening to podcasts that inspire new ideas. <br><br> I'm seeking 2025 internships in software development or IT roles to apply my passion for technology and innovation.
+        <td> 
+          <h3 style="color: white; font-size: 20px; font-weight: normal;">Hello! I'm Muhammad Naseem, an Information Technology student at York University.I'm passionate about just about anything in technology, and intrigued by all the new things arising in Artificial Intelligence. <br><br> Right now, I'm focused on learning different coding languages to expand my knowledge; however, I also have my eyes on getting into Cloud computing. <br><br> Outside of my studies, I enjoy playing video games, working out at the gym, and listening to podcasts that inspire new ideas. <br><br> I'm seeking 2025 internships in software development or IT roles to apply my passion for technology and innovation.
+          </h3>
         </td>
       </tr>
       <tr>
