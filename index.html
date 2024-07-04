@@ -12,45 +12,45 @@
       /*Index*/
       #border {
         color: white;
-        font-size: 15px;
-        margin-top: 300px;
-        margin-left: 150px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 145px;
+        margin-top: 200px
       }
 
       #border2 {
         color: white;
         font-weight: normal;
         font-size: 60px;
-        margin-top: 5px;
         margin-left: 145px;
       }
 
       #Img {
         position: absolute;
         right: 20px;
-        top: 220px;
+        top: 100px;
       }
 
       /*About Me*/
 
       #AbtPic{
         position: absolute;
-        left: 100px;
-        top: 1000px;
+        left: 90px;
+        top: 800px;
       }
 
       #AbtTitle{
         padding-top: 20px;
         color: white;
-        margin-top: 400px;
+        margin-top: 200px;
         text-align: center;
         font-size: 40px;
       }
   
       #AbtText{
         margin-top: 100px;
-        width: 800px;
-        margin-left: 800px;
+        width: 600px;
+        margin-left: 500px;
         font-size: 20px;
       }
 
@@ -68,7 +68,8 @@
       }
 
       .Col1{
-        margin-top: 750px;
+        margin-top: 5%;
+        margin-left: 4%;
         background-color: lightcyan;
         width: 500px;
         padding: 40px;
@@ -236,32 +237,56 @@
         <img src="Wave.png" alt="Image" style="width: 450px; height: 500px;"/>
       </div>
     </section>
+
+    <table style="width: 90%; margin-left: 5%; margin-right: 5%;">
+      <tr>
+        <th colspan="2"><h1 id="AbtTitle">About Me</h1></th>
+      </tr>
+      <tr>
+        <td style="text-align: center;"><img src="About.png" alt="Image" style="width: 400px; height: 500px;"></td>
+        <td style="color: white;">Hello! I'm Muhammad Naseem, an Information Technology student at York University. <br/><br/>
+          I'm passionate about just about anything in technology, and intrigued by all the new things arising in Artificial Intelligence. <br> Right now, I'm focused on learning different coding languages to expand my knowledge; however, I also have my eyes on getting into Cloud computing. <br> Outside of my studies, I enjoy playing video games, working out at the gym, and listening to podcasts that inspire new ideas. <br> I'm seeking 2025 internships in software development or IT roles to apply my passion for technology and innovation.</td>
+      </tr>
+      <tr>
+        <td class="Col1">
+          <h2 style="font-weight: normal; padding-bottom: 10px; text-align: center;">Languages</h2>
+          <img src="Languages.png" alt="" style="width: 150px; height: 140px;"/>
+          <h4 style="font-weight: normal; padding: 20px;">HTML/CSS, Java, Python, JavaScript, MatLab</h4>
+        </td>
+        <td class="Col1">
+          <h2 style="font-weight: normal; padding-top: 5px;">Developer Tools</h2>
+          <img src="DevTools.png" alt="" style="width: 200px; height: auto;"/>
+          <h4 style="font-weight: normal; padding: 20px;">
+            Git/GitHub, Eclipse, Visual Studio Code, IntelliJ IDEA
+          </h4>
+        </td>
+      </tr>
+    </table>
   
-    <!-- About Page -->
-    <section id="About">
-      <div id="AbtPic">
-        <img src="About.png" alt="Image" style="width: 600px; height: 700px;"/>
-      </div>
-  
-      <div id="AbtTitle">
-        <h1>About Me</h1>
-      </div>
-  
-      <div id="AbtText">
-        <h3 style="float: right; color: white; font-weight: normal;">
-          <ul>
-            <li>Hello! I'm Muhammad Naseem, an Information Technology student at York University. <br/><br/>
-              I'm passionate about just about anything in technology, and intrigued by all the new things arising in Artificial Intelligence.</li>
-            <br/>
-            <li>Right now, I'm focused on learning different coding languages to expand my knowledge, however, I also have my eyes on getting into Cloud computing.</li>
-            <br/>
-            <li>Outside of my studies, I enjoy playing video games, working out at the gym, and listening to podcasts that inspire new ideas.</li>
-            <br/>
-            <li>I'm seeking 2025 internships in software development or IT roles to apply my passion for technology and innovation.</li>
-          </ul>
-        </h3>
-      </div>
-  
+    <!-- <table style="width: 90%; margin-left: 5%; margin-right: 5%; border: 1px solid black;">
+      <tr>
+        <th>
+          <h1 id="AbtTitle">About Me</h1>
+        </th>
+        <tr>
+          <td>
+            <div id="AbtPic">
+              <img src="About.png" alt="Image" style="width: 400px; height: 500px;"/>
+            </div>
+          </td>
+          <td style="color: white;">
+            Hello! I'm Muhammad Naseem, an Information Technology student at York University. <br/><br/>
+            I'm passionate about just about anything in technology, and intrigued by all the new things arising in Artificial Intelligence. <br> Right now, I'm focused on learning different coding languages to expand my knowledge; however, I also have my eyes on getting into Cloud computing. <br> Outside of my studies, I enjoy playing video games, working out at the gym, and listening to podcasts that inspire new ideas. <br> I'm seeking 2025 internships in software development or IT roles to apply my passion for technology and innovation.
+          </td>
+        </tr>
+      </tr>
+
+    </table> -->
+    
+   <!-- About Page 
+
+        
+
       <div id="AbtSkills">
         <div class="Col1">
           <h2 style="font-weight: normal; padding-bottom: 10px; text-align: center;">Languages</h2>
@@ -277,8 +302,7 @@
           </h4>
         </div>
       </div>
-    </section>
-  
+    </section> -->
     <!-- Projects Page -->
     <section id="Projects">
       <div class="title">

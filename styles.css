@@ -104,3 +104,12 @@ body {
   }
 }
 
+table {
+  border: 0px solid white;
+  padding: 10px;
+  table-layout: fixed;
+}
+
+td, th {
+  border: 0px solid white;
+}
