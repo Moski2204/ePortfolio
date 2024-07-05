@@ -7,7 +7,7 @@
   font-family: "Inter", sans-serif;
 }
 
-html{
+html {
   scroll-behavior: smooth; /* Smooth scrolling */
   scroll-padding-top: 4rem; 
 }

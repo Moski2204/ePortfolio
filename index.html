@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ePortfolio</title>
     <style>
-      section{
+      section {
         scroll-margin-top: 4rem;
       }
 
@@ -18,26 +18,26 @@
         justify-content: space-between;
         align-items: center;
       }
-    
+
       .firstCol {
         flex: 1;
         margin-right: 20px;
         max-width: 900px;
       }
-    
+
       .secondCol {
         flex: 1;
         display: flex;
         justify-content: flex-end;
       }
-    
+      
       .secondCol img {
         max-width: 100%;
         height: auto;
       }
 
       /*About Me*/
-      #AbtTitle{
+      #AbtTitle {
         padding-top: 20px;
         color: white;
         margin-top: 150px;
@@ -50,27 +50,27 @@
         border-collapse: collapse;
         table-layout: fixed;
       }
-      
-      td{
+
+      td {
         margin: 0;
         padding: 10px;
       }
 
-      .Col1{
+      .Col1 {
         text-align: center;
         background-color: lightcyan;
         padding: 20px;
         border-radius: 30px;
       }
 
-      .Col2{
+      .Col2 {
         text-align: center;
         background-color: lightcyan;
         padding: 20px;
         border-radius: 30px;
       }
 
-      .Col3{
+      .Col3 {
         width: 500px;
         height: 500px;
         margin: 0 auto;
@@ -81,45 +81,45 @@
       }
 
       /*Projects*/
-      .title{
+      .title {
         text-align: center;
         color: white;
         margin-top: 200px;
         font-size: 40px;
       }
-  
-      #container{
+
+      #container {
         width: 900px;
         margin: 0 auto;
         margin-top: 100px;
       }
-      
-      .col1, .col2, .col3{
+
+      .col1, .col2, .col3 {
         text-align: center;
         width: 280px;
         float: left;
         margin: 10px;
       }
-      
-      .col1{
+
+      .col1 {
         background-color: lightcyan;
         padding: 20px;
         border-radius: 30px;
       }
-  
-      .col2{
+
+      .col2 {
         background-color: lightcyan;
         padding: 20px;
         border-radius: 30px;
       }
-  
-      .col3{
+
+      .col3 {
         background-color: lightcyan;
         padding: 20px;
         border-radius: 30px;
       }
-      
-      .col4{
+
+      .col4 {
         text-align: center;
         width: 1000px;
         height: 350px;;
@@ -131,7 +131,7 @@
       }
 
       /*Contacts*/
-      #ConTitle{
+      #ConTitle {
         color: white;
         padding-top: 10px;
         margin-top: 150px;
@@ -139,7 +139,7 @@
         font-size: 40px;
       }
 
-      #ConForm{
+      #ConForm {
         margin-top: 50px;
         text-align: center;
         margin-left: 10px;
@@ -155,7 +155,7 @@
         margin-bottom: 20px;
       }
 
-      textarea{
+      textarea {
         font-size: 20px;
         width: 30%;
         padding: 16px 16px;
@@ -164,19 +164,19 @@
         margin-bottom: 25px;
       }
 
-      input:focus-within{
+      input:focus-within {
         outline: none;
         border-color: black;
         border-width: 3px;
       }
 
-      textarea:focus-within{
+      textarea:focus-within {
         outline: none;
         border-color: black;
         border-width: 3px;
       }
 
-      button{
+      button {
         background-color: white;
         border-radius: 20px;
         text-align: center;
@@ -185,12 +185,12 @@
         margin-right: 10px;
       }
 
-      button:hover{
+      button:hover {
         background-color: lightgrey;
         cursor: pointer;
       }
 
-      #icons{
+      #icons {
         text-align: center;
         margin-top: 30px;
         padding: 20px;
@@ -205,98 +205,106 @@
           <h1>e<span style="color: white;">Portfolio</span></h1>
         </div>
         <ul class="navigation">
-          <a href="#Home"><li>Home</li></a>
-          <a href="#About"><li>About</li></a>
-          <a href="#Projects"><li>Projects</li></a>
-          <a href="Blog.html"><li>Blog</li></a>
-          <a href="#Contact"><li>Contacts</li></a>
+          <a href="#Home">
+            <li>Home</li>
+          </a>
+          <a href="#About">
+            <li>About</li>
+          </a>
+          <a href="#Projects">
+            <li>Projects</li>
+          </a>
+          <a href="Blog.html">
+            <li>Blog</li>
+          </a>
+          <a href="#Contact">
+            <li>Contacts</li>
+          </a>
         </ul>
       </div>
     </div>
 
     <!-- Home Page -->
-  <section id="Home">
-    <div class="con">
-      <div class="firstCol">
-        <h3 style="font-weight: normal; font-size: 20px; color: white;">Hey, I'm Muhammad Naseem</h3>
-        <h3 style="font-weight: normal; font-size: 50px; color: white;">An aspiring software<br>developer</h3>
-        <h3 style="font-weight: normal; font-size: 20px; color: white;">
-          I am currently a third-year student at York University pursuing a Bachelor's of Arts Honours in Information Technology
-        </h3>
-      </div>
-      <div class="secondCol">
-        <img src="Wave.png" alt="Image" style="width: 450px; height: 500px;">
-      </div>
-    </div>
-  </section>
-  
-  <!--About Page-->
-  <section id="About">
-    <table style="width: 90%; margin-left: 5%; margin-right: 5%; border-color: red;">
-      <tr style="height: 0%;">
-        <th colspan="2" style="vertical-align: top;">
-          <h1 id="AbtTitle">About Me</h1>
-        </th>
-      </tr>
-      <tr>
-        <td style="text-align: center;">
-          <img src="About.png" alt="Image" style="width: 400px; height: 500px;">
-        </td>
-        <td> 
-          <h3 style="color: white; font-size: 20px; font-weight: normal;">Hello! I'm Muhammad Naseem, an Information Technology student at York University. <br><br>I'm passionate towards just about anything in technology, and intrigued by all the new things arising in Artificial Intelligence. <br><br> Right now, I'm focused on learning different coding languages to expand my knowledge. However, I also have my eyes on learning Cloud. <br><br> Outside of my studies, I enjoy playing video games, working out at the gym, and listening to podcasts that inspire new ideas. <br><br> I'm seeking 2025 internships in software development or IT roles to apply my passion for technology and innovation.
+    <section id="Home">
+      <div class="con">
+        <div class="firstCol">
+          <h3 style="font-weight: normal; font-size: 20px; color: white;">Hey, I'm Muhammad Naseem</h3>
+          <h3 style="font-weight: normal; font-size: 50px; color: white;">An aspiring software<br>developer</h3>
+          <h3 style="font-weight: normal; font-size: 20px; color: white;">
+            I am currently a third-year student at York University pursuing a Bachelor's of Arts Honours in Information Technology
           </h3>
-        </td>
-      </tr>
-      <tr>
-        <td style="vertical-align: top;">
-          <div class="Col1">
-            <h2 style="font-weight: normal;">Languages</h2>
-            <img src="Languages.png" alt="" style="width: 150px; height: 140px;"/>
-            <h4 style="font-weight: normal; padding: 20px;">HTML/CSS, Java, Python, JavaScript, MatLab</h4>
-          </div>
-        </td>
-        <td style="vertical-align: top;">
-          <div class="Col2">
-            <h2 style="font-weight: normal; padding-bottom: 10px;">Developer Tools</h2>
-            <img src="DevTools.png" alt="" style="width: 150px; height: 135px;"/>
-            <h4 style="font-weight: normal; padding: 20px;">
-              Git/GitHub, Eclipse, Visual Studio Code, IntelliJ IDEA
-            </h4>
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="2">
-          <div class="Col3">
-            <h2 style="font-weight: normal; padding-bottom: 10px;">Resume</h2>
-            <iframe src="Resume.pdf" frameborder="10" width="450px" height="300px"></iframe>
-            <button><a href="Resume.pdf">Download</a></button>
-          </div>
-        </td>
-      </tr>
-    </table>
-  </section>
-
-   
-<!-- Projects Page -->
-  <section id="Projects">
-    <div class="title">
-      <h1>Projects</h1>
-    </div>
-    <div id="container">
-      <div class="col1">
-        <h2 style="font-weight: normal;">Grocery Store (Java & OOP)</h2>
-        <img src="GroceryStore.jpeg" alt="Grocery Store image" style="width: 240px; height: auto; padding-top: 10px;"/>
-        <br /><br/>
-        <h4 style="font-weight: normal;">
-          Developed a grocery store where customers can purchase limited items and return products. The program uses OOP principles such as encapsulation, inheritance, and abstraction to manage grocery inventory. Features include efficient user input handling, control flow mechanisms for smooth transactions, and enhanced user experience through effective management of purchases and returns.
-        </h4>
-        <br/>
-          <a href="https://github.com/Moski2204/GroceryStore">View on Github</a>
+        </div>
+        <div class="secondCol">
+          <img src="Wave.png" alt="Image" style="width: 450px; height: 500px;">
+        </div>
       </div>
-  
-      <div class="col2">
-        <h2 style="font-weight: normal;">Reverse A Word (Java & GUI)</h2>
+    </section>
+
+    <!--About Page-->
+    <section id="About">
+      <table style="width: 90%; margin-left: 5%; margin-right: 5%; border-color: red;">
+        <tr style="height: 0%;">
+          <th colspan="2" style="vertical-align: top;">
+            <h1 id="AbtTitle">About Me</h1>
+          </th>
+        </tr>
+        <tr>
+          <td style="text-align: center;">
+            <img src="About.png" alt="Image" style="width: 400px; height: 500px;">
+          </td>
+          <td>
+            <h3 style="color: white; font-size: 20px; font-weight: normal;">Hello! I'm Muhammad Naseem, an Information Technology student at York University. <br><br>I'm passionate towards just about anything in technology, and intrigued by all the new things arising in Artificial Intelligence. <br><br> Right now, I'm focused on learning different coding languages to expand my knowledge. However, I also have my eyes on learning Cloud. <br><br> Outside of my studies, I enjoy playing video games, working out at the gym, and listening to podcasts that inspire new ideas. <br><br> I'm seeking 2025 internships in software development or IT roles to apply my passion for technology and innovation.
+            </h3>
+          </td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top;">
+            <div class="Col1">
+              <h2 style="font-weight: normal;">Languages</h2>
+              <img src="Languages.png" alt="" style="width: 150px; height: 140px;"/>
+              <h4 style="font-weight: normal; padding: 20px;">HTML/CSS, Java, Python, JavaScript, MatLab</h4>
+            </div>
+          </td>
+          <td style="vertical-align: top;">
+            <div class="Col2">
+              <h2 style="font-weight: normal; padding-bottom: 10px;">Developer Tools</h2>
+              <img src="DevTools.png" alt="" style="width: 150px; height: 135px;"/>
+              <h4 style="font-weight: normal; padding: 20px;">
+                Git/GitHub, Eclipse, Visual Studio Code, IntelliJ IDEA
+              </h4>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <div class="Col3">
+              <h2 style="font-weight: normal; padding-bottom: 10px;">Resume</h2>
+              <iframe src="Resume.pdf" frameborder="10" width="450px" height="300px"></iframe>
+              <button><a href="Resume.pdf">Download</a></button>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- Projects Page -->
+    <section id="Projects">
+      <div class="title">
+        <h1>Projects</h1>
+      </div>
+      <div id="container">
+        <div class="col1">
+          <h2 style="font-weight: normal;">Grocery Store (Java & OOP)</h2>
+          <img src="GroceryStore.jpeg" alt="Grocery Store image" style="width: 240px; height: auto; padding-top: 10px;"/>
+          <br /><br/>
+          <h4 style="font-weight: normal;">
+            Developed a grocery store where customers can purchase limited items and return products. The program uses OOP principles such as encapsulation, inheritance, and abstraction to manage grocery inventory. Features include efficient user input handling, control flow mechanisms for smooth transactions, and enhanced user experience through effective management of purchases and returns.
+          </h4>
+          <br/>
+          <a href="https://github.com/Moski2204/GroceryStore">View on Github</a>
+        </div>
+        <div class="col2">
+          <h2 style="font-weight: normal;">Reverse A Word (Java & GUI)</h2>
           <br/>
           <img src="Reverse.png" alt="Image" style="width: 240px; height: auto;" />
           <br/><br/>
@@ -305,8 +313,7 @@
             <br/>
             <a href="https://github.com/Moski2204/Reverse-A-Word">View on Github</a>
           </ul>
-      </div>
-  
+        </div>
         <div class="col3">
           <h2 style="font-weight: normal;">Implementation of Data Structures (Java, OOP, & DSA)</h2>
           <br/>
@@ -319,7 +326,6 @@
           </ul>
         </div>
       </div>
-  
       <div class="container">
         <div class="col4">
           <h1 style="font-weight: normal; margin-top: 800px; text-align: center; font-size: 50px; padding: 30px;">
@@ -332,13 +338,12 @@
         </div>
       </div>
     </section>
-  
+
     <!-- Contacts -->
     <section id="Contact">
       <div id="ConTitle">
         <h1>Contact</h1>
       </div>
-  
       <div id="ConForm">
         <form>
           <input type="text" name="first" placeholder="First name" required/>
@@ -352,19 +357,17 @@
           <button type="submit">Send Message</button>
         </form>
       </div>
-  
       <div id="icons">
         <a href="https://www.linkedin.com/in/muhammad-n-835992207/">
-          <img src="linkedin.png" alt="" width="50px"/>
+        <img src="linkedin.png" alt="" width="50px"/>
         </a>
         <a href="https://github.com/Moski2204">
-          <img src="github.png" alt="" width="50px"/>
+        <img src="github.png" alt="" width="50px"/>
         </a>
       </div>
     </section>
-  
     <footer style="text-align: center; padding-top: 30px;">
       <p>@Copyright 2024</p>
     </footer>
-  </body> 
+  </body>
 </html>
