@@ -3,14 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mahrus Naseem</title>
+    <title>ePortfolio</title>
     <style>
       section{
         scroll-margin-top: 4rem;
       }
 
       /*Index*/
-
       .con {
         width: 1000px;
         margin: 0 auto;
@@ -23,6 +22,7 @@
       .firstCol {
         flex: 1;
         margin-right: 20px;
+        max-width: 900px;
       }
     
       .secondCol {
@@ -45,6 +45,17 @@
         font-size: 60px;
       }
 
+      table {
+        margin: 0 auto;
+        border-collapse: collapse;
+        table-layout: fixed;
+      }
+      
+      td{
+        margin: 0;
+        padding: 10px;
+      }
+
       .Col1{
         text-align: center;
         background-color: lightcyan;
@@ -53,6 +64,16 @@
       }
 
       .Col2{
+        text-align: center;
+        background-color: lightcyan;
+        padding: 20px;
+        border-radius: 30px;
+      }
+
+      .Col3{
+        width: 500px;
+        height: 500px;
+        margin: 0 auto;
         text-align: center;
         background-color: lightcyan;
         padding: 20px;
@@ -181,9 +202,7 @@
     <div class="header">
       <div class="inner_header">
         <div class="logo_container">
-          <h1>
-            e<span style="color: white;">Portfolio</span>
-          </h1>
+          <h1>e<span style="color: white;">Portfolio</span></h1>
         </div>
         <ul class="navigation">
           <a href="#Home"><li>Home</li></a>
@@ -195,23 +214,23 @@
       </div>
     </div>
 
-<!-- Home Page -->
-<section id="Home">
-  <div class="con">
-    <div class="firstCol">
-      <h3 style="font-weight: normal; color: white;">Hey, I'm Muhammad Naseem</h3>
-      <h3 style="font-size: 40px; color: white; font-weight: normal;"> An aspiring software <br/> developer </h3>
-      <h3 style="font-weight: normal; font-size: 25px; color: white;">
-        I am currently a third-year student at York University pursuing a Bachelor's of Arts Honours in Information Technology
-      </h3>
+    <!-- Home Page -->
+  <section id="Home">
+    <div class="con">
+      <div class="firstCol">
+        <h3 style="font-weight: normal; font-size: 20px; color: white;">Hey, I'm Muhammad Naseem</h3>
+        <h3 style="font-weight: normal; font-size: 50px; color: white;">An aspiring software<br>developer</h3>
+        <h3 style="font-weight: normal; font-size: 20px; color: white;">
+          I am currently a third-year student at York University pursuing a Bachelor's of Arts Honours in Information Technology
+        </h3>
+      </div>
+      <div class="secondCol">
+        <img src="Wave.png" alt="Image" style="width: 450px; height: 500px;">
+      </div>
     </div>
-    <div class="secondCol">
-      <img src="Wave.png" alt="Image" style="width: 450px; height: 500px;"/>
-    </div>
-</div>
-</section>
-
-<!--About Page-->
+  </section>
+  
+  <!--About Page-->
   <section id="About">
     <table style="width: 90%; margin-left: 5%; margin-right: 5%; border-color: red;">
       <tr style="height: 0%;">
@@ -224,7 +243,7 @@
           <img src="About.png" alt="Image" style="width: 400px; height: 500px;">
         </td>
         <td> 
-          <h3 style="color: white; font-size: 20px; font-weight: normal;">Hello! I'm Muhammad Naseem, an Information Technology student at York University.I'm passionate about just about anything in technology, and intrigued by all the new things arising in Artificial Intelligence. <br><br> Right now, I'm focused on learning different coding languages to expand my knowledge; however, I also have my eyes on getting into Cloud computing. <br><br> Outside of my studies, I enjoy playing video games, working out at the gym, and listening to podcasts that inspire new ideas. <br><br> I'm seeking 2025 internships in software development or IT roles to apply my passion for technology and innovation.
+          <h3 style="color: white; font-size: 20px; font-weight: normal;">Hello! I'm Muhammad Naseem, an Information Technology student at York University. <br><br>I'm passionate towards just about anything in technology, and intrigued by all the new things arising in Artificial Intelligence. <br><br> Right now, I'm focused on learning different coding languages to expand my knowledge. However, I also have my eyes on learning Cloud. <br><br> Outside of my studies, I enjoy playing video games, working out at the gym, and listening to podcasts that inspire new ideas. <br><br> I'm seeking 2025 internships in software development or IT roles to apply my passion for technology and innovation.
           </h3>
         </td>
       </tr>
@@ -243,6 +262,15 @@
             <h4 style="font-weight: normal; padding: 20px;">
               Git/GitHub, Eclipse, Visual Studio Code, IntelliJ IDEA
             </h4>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <div class="Col3">
+            <h2 style="font-weight: normal; padding-bottom: 10px;">Resume</h2>
+            <iframe src="Resume.pdf" frameborder="10" width="450px" height="300px"></iframe>
+            <button><a href="Resume.pdf">Download</a></button>
           </div>
         </td>
       </tr>
@@ -299,7 +327,7 @@
           </h1>
           <br/>
           <h3 style="text-align: center; font-weight: normal;">
-            I'm currently expanding my skills by using HTML, CSS & JavaScript to create a "Workout Tracker" application. This will application allows users to create accounts, log in, and add personal notes for reminders. Additionally, users can track the number of sets and reps they perform during each workout session. This feature will enable them to easily monitor their progress over time, which will provide valuable insights into their fitness journey.
+            I'm currently expanding my skills by using HTML, CSS & JavaScript to create a "Workout Tracker". This program will allow users to create accounts, log in, and add personal notes for reminders. Additionally, users will be able to track the number of sets and reps they've done during each workout session. This feature will enable them to easily monitor their progress over time, which will provide valuable insights into their fitness journey.
           </h3>
         </div>
       </div>

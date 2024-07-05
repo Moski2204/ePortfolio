@@ -29,7 +29,7 @@ body {
 }
 
 .inner_header {
-  width: 90%; /*scalability */
+  width: 90%;
   height: 100%;
   display: black;
   margin: 0 auto;
@@ -43,20 +43,13 @@ body {
 
 .logo_container h1 {
   color: white;
-  height: 100%;
   display: table-cell;
   vertical-align: middle;
   font-family: "Inter Tight";
-  font-size: 32px;
-  font-weight: 600;
 }
 
 .logo_container h1 span {
   font-weight: 800;
-}
-
-#scroll{
-  height: 70px;
 }
 
 .navigation {
@@ -80,15 +73,4 @@ body {
   color: white;
   font-family: "Inter Tight";
   font-size: 20px;
-}
-
-table {
-  margin: 0 auto;
-  border-collapse: collapse;
-  table-layout: fixed;
-}
-
-td{
-  margin: 0;
-  padding: 10px;
 }
