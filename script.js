@@ -1,9 +1,18 @@
-document.getElementById('darkModeBtn').addEventListener('click', function() {
-  document.body.classList.toggle('dark-mode');
-  if (document.body.classList.contains('dark-mode')) {
-    document.getElementById('darkModeBtn').innerHTML = 'Light Mode';
-  }
-  else {
-    document.getElementById('darkModeBtn').innerHTML = 'Dark Mode';
-  }
+document.addEventListener('DOMContentLoaded', function() {
+  const blogList = document.getElementById('blog-list');
+
+  fetch('/posts.json')
+    .then(response => response.json())
+    .then(posts => {
+      posts.forEach(post => {
+        const postElement = document.createElement('div');
+        postElement.innerHTML = `
+          <h3>${post.title}</h3>
+          <p>${post.description}</p>
+        `;
+        postElement.style.marginBottom = '20px';
+        blogList.appendChild(postElement);
+      });
+    })
+    .catch(error => console.error('Error loading blog posts:', error));
 });
