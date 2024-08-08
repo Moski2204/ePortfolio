@@ -23,16 +23,13 @@
       
       body {
         overflow-x: hidden; /* Prevent horizontal scroll */
-        background: rgb(0,212,255);
         background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(56,56,246,1) 35%, rgba(2,0,36,1) 100%);
         transition: background 0.5s, color 0.5s;
       }
 
+      /* Dark Mode background */
       body.dark-mode {
-        background: rgb(45,45,45);
         background: linear-gradient(90deg, rgba(45,45,45,1) 0%, rgba(30,30,30,1) 35%, rgba(0,0,0,1) 100%);
-        color: white; 
-        font-weight: bold;
       }
 
       .header {
@@ -41,22 +38,13 @@
         top: 0;
         width: 100%;
         height: 100px;
-        background: rgb(0,212,255);
         background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(56,56,246,1) 35%, rgba(2,0,36,1) 100%);
         transition: background 0.5s; /* Smooth transition for theme change */
       }
 
+      /* Dark Mode background for the header */
       body.dark-mode .header {
-        background: rgb(45,45,45);
         background: linear-gradient(90deg, rgba(45,45,45,1) 0%, rgba(30,30,30,1) 35%, rgba(0,0,0,1) 100%);
-      }
-
-      body.dark-mode * {
-        color: black;
-      }
-
-      #dark {
-        color: white; /* To make the title Projects and Contacts white in dark mode */
       }
 
       .inner_header {
@@ -83,6 +71,7 @@
         font-weight: 800;
       }
 
+      /* Styling the darkmode button */
       #darkMode {
         font-size: 14px;
         margin-top: 35px;
@@ -101,11 +90,14 @@
         background-color: white;
         color: black; 
       }
+
+      body.dark-mode h2,h3,p,h4,li {
+        color: black;
+      }
       
       .navigation {
         float: right;
         height: 100%;
-      
       }
       
       .navigation a {
@@ -374,7 +366,7 @@
             <img src="About.png" alt="Image" style="width: 400px; height: 500px;">
           </td>
           <td>
-            <h3 style="color: white; font-size: 20px; font-weight: normal;">Hello! I'm Muhammad Naseem, an Information Technology student at York University. <br><br>I'm passionate towards just about anything in technology, and intrigued by all the new things arising in Artificial Intelligence. <br><br> Right now, I'm focused on learning different coding languages to expand my knowledge. However, I also have my eyes on learning Cloud. <br><br> Outside of my studies, I enjoy playing video games, working out at the gym, and listening to podcasts that inspire new ideas. <br><br> I'm seeking 2025 internships in software development or IT roles to apply my passion for technology and innovation.
+            <h3 style="color: white;font-size: 20px; font-weight: normal;">Hello! I'm Muhammad Naseem, an Information Technology student at York University. <br><br>I'm passionate towards just about anything in technology, and intrigued by all the new things arising in Artificial Intelligence. <br><br> Right now, I'm focused on learning different coding languages to expand my knowledge. However, I also have my eyes on learning Cloud. <br><br> Outside of my studies, I enjoy playing video games, working out at the gym, and listening to podcasts that inspire new ideas. <br><br> I'm seeking 2025 internships in software development or IT roles to apply my passion for technology and innovation.
             </h3>
           </td>
         </tr>
