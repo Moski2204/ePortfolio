@@ -4,16 +4,38 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blog Page</title>
+  <style>
+    
+    body{
+      background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(56,56,246,1) 35%, rgba(2,0,36,1) 100%);
+    }
+
+    /* The layout of the blog posts */
+    .columns{
+      display: flex;
+      gap: 20px; /* Adjust the spacing between columns */
+      padding: 20px;
+    }
+    
+    /* Styling for each blog post */
+    .blogContent{
+      flex: 1 1 calc(50% - 20px); /* Two columns with a gap between them */
+      box-sizing: border-box;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background: linear-gradient(90deg, rgba(45,45,45,1) 0%, rgba(30,30,30,1) 35%, rgba(0,0,0,1) 100%);
+      text-align: center;
+      color: white;
+    }
+
+  </style>
 </head>
 <body>
-  <div>
-    <h1 style="text-align: center;">Blog Page</h1>
-  </div>
+ 
+    <h1 style="text-align: center; color: white;">Blog Page</h1>
 
-  <div id="blog-list">
-
-  </div>
-
+  <div id="blog-list" class="columns"> <!-- The --></div>
 
   <script src="script.js"></script>
 </body>
