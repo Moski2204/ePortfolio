@@ -490,13 +490,13 @@
             document.getElementById('darkModeBtn').innerHTML = 'Dark Mode';
             localStorage.setItem('darkMode', 'disabled'); //Store 'disabled' in localStorage
         }
-    });
+        });
     
-    //Checking the local storage and applying  dark mode only if it's was enabled
-    if (localStorage.getItem('darkMode') === 'enabled') {
-        document.body.classList.add('dark-mode');
-        document.getElementById('darkModeBtn').innerHTML = 'Light Mode';
-    }
+        //Checking the local storage and applying  dark mode only if it's was enabled
+        if (localStorage.getItem('darkMode') === 'enabled') {
+            document.body.classList.add('dark-mode');
+            document.getElementById('darkModeBtn').innerHTML = 'Light Mode';
+        }
     </script>
 
     <script src="script.js"></script>
