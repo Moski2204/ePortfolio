@@ -24,7 +24,7 @@
       body {
         overflow-x: hidden; /* Prevent horizontal scroll */
         background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(56,56,246,1) 35%, rgba(2,0,36,1) 100%);
-        transition: background 0.5s, color 0.5s;
+        transition: background-color 0.5s, color 0.5s;
       }
 
       /* Dark Mode background */
@@ -39,7 +39,7 @@
         width: 100%;
         height: 100px;
         background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(56,56,246,1) 35%, rgba(2,0,36,1) 100%);
-        transition: background 0.5s; /* Smooth transition for theme change */
+        transition: background-color 0.5s; /* Smooth transition for theme change */
       }
 
       /* Dark Mode background for the header */
@@ -311,7 +311,7 @@
       <div class="inner_header">
         <div class="logo_container">
           <h1>e<span style="color: white;">Portfolio</span></h1>
-          <h4><button id="darkModeBtn">Dark Mode</button></h4>
+          <button id="darkModeBtn">Dark Mode</button>
         </div>
         <ul class="navigation">
           <a href="#Home">
@@ -482,7 +482,7 @@
     <!-- Dark Mode -->
     <script>
       document.getElementById('darkModeBtn').addEventListener('click', () => {
-        document.body.classList.toggle('dark-mode');
+        document.body.classList.toggle('dark-mode'); //To switch between light and dark mode
         if (document.body.classList.contains('dark-mode')) {
             document.getElementById('darkModeBtn').innerHTML = 'Light Mode';
             localStorage.setItem('darkMode', 'enabled'); //Store 'enabled' in localStorage
@@ -492,7 +492,7 @@
         }
         });
     
-        //Checking the local storage and applying  dark mode only if it's was enabled
+        //Checking the local storage and applying  dark mode only if it was enabled
         if (localStorage.getItem('darkMode') === 'enabled') {
             document.body.classList.add('dark-mode');
             document.getElementById('darkModeBtn').innerHTML = 'Light Mode';
