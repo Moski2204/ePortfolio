@@ -30,6 +30,29 @@
       height: 800px;
       line-height: 1.5;
     }
+
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 500px 1fr; /* 3 columns: flexible, fixed, flexible */
+      justify-items: center;
+      padding: 20px;
+      justify-content: center; /* Centers the column horizontally */
+      align-items: center; /* Centers the column vertically */
+      flex-direction: column; /* Aligns items in a column */
+      padding: 20px;
+      
+    }
+
+    .Steps{
+      background: linear-gradient(90deg, rgba(45,45,45,1) 0%, rgba(30,30,30,1) 35%, rgba(0,0,0,1) 100%);
+      box-sizing: border-box;;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      width: 500px;
+      padding: 30px;
+      grid-column: 1; /* Places the .Steps element in the center column */
+      align-self: start; /* Aligns the element to the top of the grid row */
+    }
   </style>
 </head>
 <body>
@@ -37,6 +60,34 @@
     <h1 style="text-align: center; color: white;">Blog Page</h1>
 
   <div id="blog-list" class="columns"></div>
+
+
+  <div class="container">
+    <div class="Steps">
+      <h3 style="color: white; text-align: center">Step 1:</h3>
+      <img src="FirstStepA.png" alt="" style="width: 430px;">
+      <br>
+      <img src="FirstStepB.png" alt="" style="width: 430px;">
+      <h5 style="color: white; text-align: center">Lines 314 & 74 - 86</h5>
+    
+      <h3 style="color: white; text-align: center">Step 2:</h3>
+      <img src="SecondStep.png" alt="" style="width: 450px;">
+      <h5 style="color: white; text-align: center">Lines 484 - 485 & 486 - 492</h5>
+      
+      <h3 style="color: white; text-align: center">Step 3:</h3>
+      <img src="ThirdStep.png" alt="" style="width: 450px;">
+      <h5 style="color: white; text-align: center">Lines 488 - 491 & 496 - 499</h5>
+
+      <h3 style="color: white; text-align: center">Step 4:</h3>
+      <img src="FourthStepA.png" alt="" style="height: 40px; width: 430px;">
+      <br>
+      <br>
+      <img src="FourthStepB.png" alt="" style="height: 40px; width: 430px;">
+      <br>
+      <br>
+      <img src="FourthStepC.png" alt="" style="width: 430px;">
+  </div>
+</div>
 
   <script src="script.js"></script>
 </body>
