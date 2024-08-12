@@ -13,13 +13,13 @@
     /* The layout of the blog posts */
     .columns{
       display: flex;
-      gap: 20px; 
+      gap: 20px;  /* Add space between the blog posts */
       padding: 20px;
     }
     
     /* Styling for the blog posts */
     .blogContent{
-      flex: 1 1 calc(50% - 20px); /* Two columns with a gap between them */
+      flex: 1 1 calc(50% - 20px); /*Sets width of .blogContent to 50% of #blog-list minus 20px, leaving a 20px gap between blog posts*/
       box-sizing: border-box;
       padding: 20px;
       border: 1px solid #ddd;
@@ -31,6 +31,7 @@
       line-height: 1.5;
     }
 
+    /* The layout for the steps */
     .container {
       display: grid;
       grid-template-columns:  1fr 2fr 1fr 2fr;
@@ -95,32 +96,33 @@
  
   <h1 style="text-align: center; color: white;">Blog Page</h1>
 
-  <div id="blog-list" class="columns"></div>
+  <div id="blog-list" class="columns"></div> 
 
+  <!-- Hardcoding images for the blog posts, not sure how to do it dynamically -->
   <div class="container">
     <div class="Steps">
       <h3 style="color: white; text-align: center">Step 1:</h3>
-      <img src="FirstStepA.png" alt="" style="width: 430px;">
+      <img src="FirstStepA.png" alt="Step 1a" style="width: 430px;">
       <br>
-      <img src="FirstStepB.png" alt="" style="width: 430px;">
+      <img src="FirstStepB.png" alt="Step 1b" style="width: 430px;">
       <h6 style="color: white; text-align: center">Lines 314 & 75 - 86</h6>
       
       <h3 style="color: white; text-align: center">Step 2:</h3>
-      <img src="SecondStep.png" alt="" style="width: 450px;">
+      <img src="SecondStep.png" alt="Step 2" style="width: 450px;">
       <h6 style="color: white; text-align: center">Lines 484 - 485 & 486 - 492</h6>
         
       <h3 style="color: white; text-align: center">Step 3:</h3>
-      <img src="ThirdStep.png" alt="" style="width: 450px;">
-      <h6 style="color: white; text-align: center">Lines 488 - 491 & 496 - 499</h6>
+      <img src="ThirdStep.png" alt="Step 3" style="width: 450px;">
+      <h6 style="color: white; text-align: center">Lines 488 & 491 & 496 - 499</h6>
 
       <h3 style="color: white; text-align: center">Step 4:</h3>
-      <img src="FourthStepA.png" alt="" style="height: 40px; width: 430px;">
+      <img src="FourthStepA.png" alt="Step 4a" style="height: 40px; width: 430px;">
       <h6 style="color: white; text-align: center">Lines 31 - 33</h6>
 
-      <img src="FourthStepB.png" alt="" style="height: 40px; width: 430px;">
+      <img src="FourthStepB.png" alt="Step 4b" style="height: 40px; width: 430px;">
       <h6 style="color: white; text-align: center">Lines 46 - 48</h6>
       
-      <img src="FourthStepC.png" alt="" style="width: 430px;">
+      <img src="FourthStepC.png" alt="Step 4c" style="width: 430px;">
       <h6 style="color: white; text-align: center">Lines 89 - 92</h6>
     </div>
 
@@ -137,7 +139,7 @@
 
       <h3 style="color: white; text-align: center">Step 4:</h3>
       <img src="Part2d.png" alt="" style=" width: 450px;">
-      <h6 style="color: white; text-align: center">Line 98</h6>
+      <h6 style="color: white; text-align: center">Line 99</h6>
 
       <h3 style="color: white; text-align: center">Step 5:</h3>
       <img src="Part2e.png" alt="" style=" width: 350px; margin-left: 65px;">
@@ -149,11 +151,11 @@
 
       <h3 style="color: white; text-align: center">Step 7:</h3>
       <img src="Part2g.png" alt="" style=" width: 320px; margin-left: 65px;">
-      <h6 style="color: white; text-align: center">Lines 100 - 158</h6>
+      <h6 style="color: white; text-align: center">Lines 102 - 160</h6>
 
       <h3 style="color: white; text-align: center">Step 8:</h3>
       <img src="Part2h.png" alt="" style=" width: 400px; margin-left: 25px;">
-      <h6 style="color: white; text-align: center">Lines 34 - 42, 45 - 53, & 56 - 64</h6>
+      <h6 style="color: white; text-align: center">Lines 35 - 43, 46 - 54, & 57 - 65</h6>
     </div>
   </div>
 
@@ -170,8 +172,7 @@
           localStorage.setItem('darkMode', 'disabled'); //Store 'disabled' in localStorage
         }
       });
-      
-        //Checking the local storage and applying  dark mode only if it was enabled
+        //Checking the local storage and applying dark mode only if it was enabled
         if (localStorage.getItem('darkMode') === 'enabled') {
           document.body.classList.add('dark-mode');
           document.getElementById('darkModeBtn').innerHTML = 'Light Mode';
