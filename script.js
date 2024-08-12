@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
           <h3>${post.title}</h3>
           <p>${post.description}</p>
         `;
+        //manipulate postElement to show the content of the blog post with the specific style defined for it
         blogList.appendChild(postElement);
       });
     })
